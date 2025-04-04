@@ -1,0 +1,204 @@
+/* Contenedor principal con el fondo */
+.container_fundo {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-rows: 800px; /* Definiendo la altura de la fila */
+  grid-template-columns: 30% 40% 30%; /* Definiendo el ancho de las columnas */
+  width: 1440px; /* Ancho total del contenedor */
+}
+
+/* Estilo de la columna 1 */
+.coluna1 {
+  background-color: #151515;
+}
+
+.coluna2 h1 {
+  display: block;
+  justify-content: center; /* Centra horizontalmente */
+  font-family: "Big Shoulders", sans-serif;
+  position: relative;
+  width: fit-content;
+  top: 7rem;
+  left: -40%; /* Centrando el título */
+  color: #ffffff;
+  line-height: 5rem;
+  font-size: 590%;
+}
+
+/* Estilo de la columna 2 con imagen de fondo */
+.coluna2 {
+  background-image: url("../img/RectangleAbuela.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilo de la columna 3 */
+.coluna3 {
+  background-color: #ffffff;
+}
+
+/* Estilo de los párrafos en la columna 3 */
+.coluna3 p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  position: relative;
+  top: 10.5rem;
+  left: -60px;
+  color: #444444;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  width: 21.87rem;
+  height: 10rem;
+}
+
+/* Estilo del botón de ubicación */
+.btnLocation {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-decoration: none;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #ffffff;
+  width: 260px;
+  height: 72px;
+  background-color: black;
+  margin: 0;
+  top: 250px;
+  left: -60px;
+  letter-spacing: 3.5px;
+}
+
+/* Estilo del camino de navegación */
+.path {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -25px;
+  background-color: #d5966c;
+  height: 100%;
+  width: 56px;
+}
+
+/* Estilos adicionales (si es necesario) */
+
+.modern,
+.art-gallery {
+  display: block;
+}
+
+/* Medias Queries para tablet y móvil */
+
+/* Tablet: Cambiar la disposición para pantallas más pequeñas */
+@media (max-width: 1024px) {
+  .container_fundo {
+    grid-template-columns: 437px 331px; /* Dos columnas en vez de tres */
+    grid-template-rows: 700px; /* Definiendo la altura de la fila */
+    width: 768px; /* Asegura que el contenedor se adapte al tamaño de la pantalla */
+  }
+
+  .coluna1 {
+    display: none;
+  }
+
+  .coluna2 h1 {
+    display: flex;
+    flex-direction: column;
+    color: #151515;
+    position: relative;
+    font-size: 70px; /* Reducir tamaño de fuente en tabletas */
+    font-weight: bolder;
+    top: 100px; /* Ajustar la posición */
+    left: 405px; /* Centrar el título */
+    height: auto;
+    
+  }
+
+  .coluna3 p {
+    font-size: 18px; /* Reducir tamaño de fuente */
+    top: 20rem; /* Ajustar posición */
+    left: -30px; /* Ajustar alineación */
+    width: 339px; /* Ajustar el ancho del párrafo */
+    line-height: 28px;
+    height: auto;
+  }
+
+  .btnLocation {
+    width: 220px; /* Ajustar tamaño del botón */
+    height: 60px;
+    font-size: 18px; /* Reducir tamaño de fuente */
+    top: 380px; /* Ajustar la posición */
+    left: -30px;
+  }
+}
+
+/* Móvil: Adaptación para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .container_fundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    //grid-template-columns: 100%; /* Una sola columna */
+    //grid-template-rows: 375px; /* Ajustar las filas según el contenido */
+    width: 375px;
+  }
+
+  .coluna1 {
+    display: none;
+  }
+
+  .coluna2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 240px;
+  }
+
+  .coluna2 h1 {
+    width: 343px;
+    margin-top: 100px;
+  }
+
+  .coluna2 span {
+    font-size: 60px; 
+    line-height: 50px;
+    color: #151515;
+    font-weight: bolder;
+    width: 343px;
+  }
+
+  .coluna3{
+    margin-top: 200px;
+    margin-left: 30px;
+  }
+  
+  .coluna3 p {
+    font-size: 18px; /* Reducir aún más el tamaño de la fuente */
+    position:static;
+    color: #444444;
+    line-height: 28px;
+    height: 112px;
+    width: 343px;
+    
+  }
+
+  .btnLocation {
+    width: 180px; /* Reducir tamaño del botón */
+    height: 50px;
+    font-size: 16px; /* Reducir tamaño de fuente */
+    top: 160px; /* Ajustar la posición */
+    left: 0; /* Centrar el botón */
+    letter-spacing: 1.5px; /* Reducir el espaciado */
+  }
+
+  .path {
+    width: 50px; /* Reducir ancho de la ruta */
+  }
+}

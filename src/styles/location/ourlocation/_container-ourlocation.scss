@@ -1,0 +1,91 @@
+.location-centro {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 545px;
+}
+
+.location-leftside,
+.location-rightside {
+  width: 50%;
+  margin-top: 69px;
+}
+
+.location-leftside h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 70px;
+  margin-left: 164px;
+}
+
+.kingstreet {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 36px;
+  color: #d5966c;
+}
+
+.address {
+  width: 445px;
+  height: 96px;
+  font-family: Outfit, sans-serif;
+  font-size: 22px;
+}
+
+.address p {
+  margin: 0;
+  font-family: Outfit, sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.description {
+  width: 540px;
+  height: 128px;
+  font-family: Outfit, sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+/* Tablets (largura de até 1024px) */
+@media (max-width: 1024px) {
+  .location-centro {
+    height: 436px;
+  }
+
+  .location-leftside {
+    width: 40%;
+    margin: 0;
+  }
+
+  .location-rightside {
+    width: 60%;
+    margin: 0;
+  }
+
+  .location-leftside h1 {
+    font-size: 55px;
+    margin-top: 87px;
+    margin-left: 39px;
+  }
+
+  .kingstreet {
+    font-size: 32px;
+    margin-top: 87px;
+  }
+
+  .address p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .description {
+    width: 398px;
+    height: 112px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

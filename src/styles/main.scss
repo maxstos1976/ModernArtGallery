@@ -1,0 +1,12 @@
+@use "./index/header/container-header" as cf;
+@use "./index/centro/container-centro" as cc;
+@use "./index/footer/container-footer" as cfooter;
+@use "./location/mapa/container-mapa" as locfmapa;
+@use "./location/ourlocation/container-ourlocation" as locourlocation;
+@use "./location/footer/container-footer" as locfooter;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

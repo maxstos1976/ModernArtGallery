@@ -1,0 +1,311 @@
+.container-centro {
+  width: 1110px;
+  margin: 180px auto;
+}
+
+.yourday-and-foto-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yourday {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  height: 80%;
+}
+
+.yourday h2 {
+  font-family: "Big Shoulders", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+.yourday p {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.foto-yourday img {
+  width: 635px;
+  aspect-ratio: 3.17/2;
+  object-fit: cover;
+}
+
+.yourday-and-foto-inferior {
+  display: flex;
+  margin-top: 32px;
+  gap: 32px;
+}
+
+.left-side-img {
+  width: 635px;
+  height: 720px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 445px;
+  height: 720px;
+  gap: 20px;
+}
+
+.comebeinspired {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  width: 445px;
+  height: 377px;
+  gap: 20px;
+
+}
+
+.comebeinspired h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  width: 80%;
+}
+
+.comebeinspired p {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: ffffff;
+  padding: 0;
+  margin: 0;
+  width: 350px;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+/* Media Queries para dispositivos menores */
+
+/* Tablets (largura de até 1024px) */
+@media (max-width: 1024px) {
+  .container-centro {
+    width: 689px; /* Ajusta o contêiner para ocupar a maior parte da tela */
+    height: 400px;
+    margin: 120px auto; /* Ajusta a margem */
+  }
+
+  .yourday-and-foto-superior {
+    align-items: space-between; /* Alinha os itens */
+    height: 100%;
+  }
+
+  .yourday {
+    width: 223px; /* Ajusta a largura */
+    height: 299px;
+  }
+
+  .yourday h2 {
+    font-size: 45px; /* Reduz o tamanho da fonte */
+    width: 80%; /* Ajusta a largura */
+    font-weight: 800;
+    line-height: 40px;
+  }
+
+  .yourday p {
+    font-size: 18px; /* Reduz o tamanho do texto */
+    width: 100%; /* Ajusta a largura */
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .foto-yourday img {
+    width: 398px;
+    aspect-ratio: 3.17/3.19;
+    object-fit: cover;
+  }
+
+  .yourday-and-foto-inferior {
+    flex-direction: row; /* Coloca as imagens em coluna */
+    margin-top: 32px;
+    width: 689px; /* Ajusta a largura */
+    height: 720px; /* Ajusta a altura */
+    gap: 11px;
+  }
+
+  .left-side-img {
+    width: 398px; /* Ajusta as imagens e a seção para ocupar toda a largura */
+    height: auto; /* Ajusta a altura proporcionalmente */
+  }
+
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 11px;
+    width: 280px; /* Ajusta as imagens e a seção para ocupar toda a largura */
+    height: auto; /* Ajusta a altura proporcionalmente */
+  }
+
+  .right-side img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura */
+    height: 313px; /* Ajusta a altura para manter a proporção */
+    object-fit: cover; /* Mantém a proporção da imagem */
+  }
+
+  .comebeinspired {
+    width: 100%; /* Ajusta a largura para ocupar toda a tela */
+    height: 396px; /* Ajusta a altura proporcionalmente */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .comebeinspired h2 {
+    font-size: 50px; /* Reduz o tamanho do título */
+    line-height: 45px;
+    margin: 0px;
+    width: 223px;
+    color: #ffffff;
+  }
+
+  .comebeinspired p {
+    font-size: 18px; /* Reduz o tamanho da fonte */
+    margin-left: 0; /* Remove o deslocamento */
+    width: 223px; /* Ajusta a largura */
+    text-align: left; /* Centraliza o texto */
+    color: #ffffff;
+  }
+}
+
+/* Móveis (largura de até 768px) */
+@media (max-width: 768px) {
+  
+ 
+  .coluna2 h1{
+    position: relative;
+    // top: 250px;
+    left: 0px;
+    margin-top: 200px;
+  }
+
+  .coluna3{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .coluna3 p{
+    width: 343px;
+    line-height: 28px;
+    font-size: 18px;
+  }
+
+  .btnLocation{
+    position: absolute;
+    top: 600px;
+    left: auto;
+  }
+
+  .container-centro{
+    position: relative;
+    width: 343px;
+    margin: 180px auto; 
+    height: auto;
+   }
+
+
+  .yourday-and-foto-superior {
+    display: flex;
+    flex-direction:column-reverse; 
+    align-items: center; 
+
+    margin: 0;
+  }
+
+  .yourday{
+    width: 100%;
+  }
+
+  .yourday h2 {
+    font-size: 50px;
+    line-height: 45px;
+    width: 283px;
+    height: 88px;
+  }
+
+  .yourday p {
+    font-size: 18px; 
+    font-weight: 300;
+    line-height: 28px;
+    width: 90%; 
+    margin-top: 33px;
+  }
+
+  .yourday-and-foto-superior img {
+    width: 100%; 
+    position: relative;
+    top: 0px;
+  }
+
+  .yourday-and-foto-inferior {
+    flex-direction: column; 
+    width: 100%;
+  }
+
+   .yourday-and-foto-inferior img{
+    width: 100%;
+   }
+
+   .left-side-img{
+      width: 100%;
+      height: 480px;
+   }
+ 
+  .right-side {
+    width: 100%;
+
+  }
+
+  .comebeinspired {
+    width: 100%;
+    height: 293px;
+  }
+
+  .comebeinspired h2 {
+    font-size: 50px; 
+    width: 295px;
+    line-height: 45px;
+    margin-left: 0;
+    color: #ffffff;
+  }
+
+  .comebeinspired p {
+    width: 295px;
+    font-size: 18px; 
+    line-height: 28px;
+    margin-left: 0; 
+    text-align: left; 
+    color: #ffffff;
+  }
+
+}

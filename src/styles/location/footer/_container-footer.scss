@@ -1,0 +1,23 @@
+.location {
+  background-color: #d5966c;
+  color: #151515;
+}
+
+.loc-text-footer {
+  font-weight: 800;
+  color: #151515;
+}
+
+/* Tablets (largura de até 1024px) */
+@media (max-width: 1024px) {
+  .footer {
+    position: inherit;
+  }
+}
+
+@media (max-width: 768px) {
+  .loc-text-footer {
+    font-weight: 400;
+    color: #151515;
+  }
+}

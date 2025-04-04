@@ -1,0 +1,136 @@
+.footer-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 244px;
+  background-color: #151515;
+  margin: auto;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1110px;
+  height: 84px;
+}
+
+.footer-coluna2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-coluna2 p {
+  font-family: Outfit, sans-serif;
+  font-weight: 300;
+  width: 430px;
+  height: 84px;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.footer-coluna3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  height: 20px;
+}
+
+footer div {
+  color: white;
+}
+
+/* Media Queries para Tablet */
+@media screen and (max-width: 1024px) {
+  .footer-index {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    width: 768px;
+    height: 216px;
+    top: 700px;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 689px;
+    height: 104px;
+  }
+
+  .footer-coluna1 img {
+    width: 110px;
+    height: 40px;
+  }
+
+  .footer-coluna2 p {
+    font-family: Outfit, sans-serif;
+    font-weight: 300;
+    width: 281px;
+    height: 104px;
+    font-size: 17px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  .footer-coluna3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    height: 20px;
+  }
+
+  footer div {
+    color: white;
+  }
+}
+
+/* Media Queries para Smartphone */
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-index {
+    margin-top: 200px;
+    top: 0px;
+    width: 375px;
+    height: 336px; 
+    background-color: black;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    align-items: left;
+    width: 311px;
+    height: 240px;
+    padding: 20px;
+  }
+
+  .footer-coluna1 img{
+    width: 110px;
+    height: 40px;
+  }
+
+  .footer-coluna2 p {
+    font-size: 16px; 
+    text-align: left;
+  }
+
+  .footer-coluna3 {
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100px;
+    gap: 10px;
+  }
+}

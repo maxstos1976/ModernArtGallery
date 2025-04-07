@@ -1,9 +1,9 @@
-.container-centro {
+.containerCenter {
   width: 1110px;
   margin: 180px auto;
 }
 
-.yourday-and-foto-superior {
+.yd-foto-superior {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,19 +41,19 @@
   margin-top: 20px;
 }
 
-.foto-yourday img {
+.yourday-foto img {
   width: 635px;
   aspect-ratio: 3.17/2;
   object-fit: cover;
 }
 
-.yourday-and-foto-inferior {
+.yd-foto-inferior {
   display: flex;
   margin-top: 32px;
   gap: 32px;
 }
 
-.left-side-img {
+.bancoymoldura {
   width: 635px;
   height: 720px;
 }
@@ -105,57 +105,55 @@
   margin-left: 50px;
 }
 
-/* Media Queries para dispositivos menores */
-
 /* Tablets (largura de até 1024px) */
 @media (max-width: 1024px) {
-  .container-centro {
-    width: 689px; /* Ajusta o contêiner para ocupar a maior parte da tela */
+  .containerCenter {
+    width: 689px; 
     height: 400px;
-    margin: 120px auto; /* Ajusta a margem */
+    margin: 120px auto; 
   }
 
-  .yourday-and-foto-superior {
-    align-items: space-between; /* Alinha os itens */
+  .yd-foto-superior {
+    align-items: space-between; 
     height: 100%;
   }
 
   .yourday {
-    width: 223px; /* Ajusta a largura */
+    width: 223px; 
     height: 299px;
   }
 
   .yourday h2 {
-    font-size: 45px; /* Reduz o tamanho da fonte */
-    width: 80%; /* Ajusta a largura */
+    font-size: 45px; 
+    width: 80%; 
     font-weight: 800;
     line-height: 40px;
   }
 
   .yourday p {
-    font-size: 18px; /* Reduz o tamanho do texto */
-    width: 100%; /* Ajusta a largura */
+    font-size: 18px; 
+    width: 100%; 
     font-size: 18px;
     line-height: 28px;
   }
 
-  .foto-yourday img {
+  .yourday-foto img {
     width: 398px;
     aspect-ratio: 3.17/3.19;
     object-fit: cover;
   }
 
-  .yourday-and-foto-inferior {
-    flex-direction: row; /* Coloca as imagens em coluna */
+  .yd-foto-inferior {
+    flex-direction: row; 
     margin-top: 32px;
-    width: 689px; /* Ajusta a largura */
-    height: 720px; /* Ajusta a altura */
+    width: 689px; 
+    height: 720px; 
     gap: 11px;
   }
 
-  .left-side-img {
-    width: 398px; /* Ajusta as imagens e a seção para ocupar toda a largura */
-    height: auto; /* Ajusta a altura proporcionalmente */
+  .bancoymoldura {
+    width: 398px; 
+    height: auto; 
   }
 
   .right-side {
@@ -163,25 +161,25 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 11px;
-    width: 280px; /* Ajusta as imagens e a seção para ocupar toda a largura */
-    height: auto; /* Ajusta a altura proporcionalmente */
+    width: 280px; 
+    height: auto; 
   }
 
   .right-side img {
-    width: 100%; /* Ajusta a imagem para ocupar toda a largura */
-    height: 313px; /* Ajusta a altura para manter a proporção */
-    object-fit: cover; /* Mantém a proporção da imagem */
+    width: 100%; 
+    height: 313px; 
+    object-fit: cover; 
   }
 
   .comebeinspired {
-    width: 100%; /* Ajusta a largura para ocupar toda a tela */
-    height: 396px; /* Ajusta a altura proporcionalmente */
+    width: 100%; 
+    height: 396px; 
     justify-content: center;
     align-items: center;
   }
 
   .comebeinspired h2 {
-    font-size: 50px; /* Reduz o tamanho do título */
+    font-size: 50px; 
     line-height: 45px;
     margin: 0px;
     width: 223px;
@@ -189,10 +187,10 @@
   }
 
   .comebeinspired p {
-    font-size: 18px; /* Reduz o tamanho da fonte */
-    margin-left: 0; /* Remove o deslocamento */
-    width: 223px; /* Ajusta a largura */
-    text-align: left; /* Centraliza o texto */
+    font-size: 18px; 
+    margin-left: 0; 
+    width: 223px; 
+    text-align: left; 
     color: #ffffff;
   }
 }
@@ -226,7 +224,7 @@
     left: auto;
   }
 
-  .container-centro{
+  .containerCenter{
     position: relative;
     width: 343px;
     margin: 180px auto; 
@@ -234,7 +232,7 @@
    }
 
 
-  .yourday-and-foto-superior {
+  .yd-foto-superior {
     display: flex;
     flex-direction:column-reverse; 
     align-items: center; 
@@ -261,27 +259,27 @@
     margin-top: 33px;
   }
 
-  .yourday-and-foto-superior img {
+  .yd-foto-superior img {
     width: 100%; 
     position: relative;
     top: 0px;
   }
 
-  .yourday-and-foto-inferior {
+  .yd-foto-inferior {
     flex-direction: column; 
     width: 100%;
   }
 
-   .yourday-and-foto-inferior img{
-    width: 100%;
-   }
-
-   .left-side-img{
+  .bancoymoldura{
+      position: absolute;
       width: 100%;
       height: 480px;
+      
    }
  
   .right-side {
+    position: relative;
+    margin-top: 490px;
     width: 100%;
 
   }

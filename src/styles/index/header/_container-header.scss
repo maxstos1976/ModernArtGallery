@@ -1,11 +1,10 @@
-/* Contenedor principal con el fondo */
-.container_fundo {
+.containerAll {
   display: grid;
   margin-left: auto;
   margin-right: auto;
-  grid-template-rows: 800px; /* Definiendo la altura de la fila */
-  grid-template-columns: 30% 40% 30%; /* Definiendo el ancho de las columnas */
-  width: 1440px; /* Ancho total del contenedor */
+  grid-template-rows: 800px; 
+  grid-template-columns: 30% 40% 30%; 
+  width: 1440px; 
 }
 
 /* Estilo de la columna 1 */
@@ -15,30 +14,27 @@
 
 .coluna2 h1 {
   display: block;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center; 
   font-family: "Big Shoulders", sans-serif;
   position: relative;
   width: fit-content;
   top: 7rem;
-  left: -40%; /* Centrando el título */
+  left: -40%; 
   color: #ffffff;
   line-height: 5rem;
   font-size: 590%;
 }
 
-/* Estilo de la columna 2 con imagen de fondo */
 .coluna2 {
   background-image: url("../img/RectangleAbuela.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* Estilo de la columna 3 */
 .coluna3 {
   background-color: #ffffff;
 }
 
-/* Estilo de los párrafos en la columna 3 */
 .coluna3 p {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
@@ -53,12 +49,11 @@
   height: 10rem;
 }
 
-/* Estilo del botón de ubicación */
 .btnLocation {
   position: relative;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center; 
+  align-items: center;
   text-decoration: none;
   font-family: "Big Shoulders", sans-serif;
   font-size: 22px;
@@ -73,7 +68,6 @@
   letter-spacing: 3.5px;
 }
 
-/* Estilo del camino de navegación */
 .path {
   display: flex;
   justify-content: center;
@@ -85,21 +79,16 @@
   width: 56px;
 }
 
-/* Estilos adicionales (si es necesario) */
-
 .modern,
 .art-gallery {
   display: block;
 }
 
-/* Medias Queries para tablet y móvil */
-
-/* Tablet: Cambiar la disposición para pantallas más pequeñas */
 @media (max-width: 1024px) {
-  .container_fundo {
-    grid-template-columns: 437px 331px; /* Dos columnas en vez de tres */
-    grid-template-rows: 700px; /* Definiendo la altura de la fila */
-    width: 768px; /* Asegura que el contenedor se adapte al tamaño de la pantalla */
+  .containerAll {
+    grid-template-columns: 437px 331px; 
+    grid-template-rows: 700px; 
+    width: 768px; 
   }
 
   .coluna1 {
@@ -111,41 +100,39 @@
     flex-direction: column;
     color: #151515;
     position: relative;
-    font-size: 70px; /* Reducir tamaño de fuente en tabletas */
+    font-size: 70px; 
     font-weight: bolder;
-    top: 100px; /* Ajustar la posición */
-    left: 405px; /* Centrar el título */
+    top: 100px; 
+    left: 405px; 
     height: auto;
     
   }
 
   .coluna3 p {
-    font-size: 18px; /* Reducir tamaño de fuente */
-    top: 20rem; /* Ajustar posición */
-    left: -30px; /* Ajustar alineación */
-    width: 339px; /* Ajustar el ancho del párrafo */
+    font-size: 18px; 
+    top: 20rem; 
+    left: -30px; 
+    width: 339px; 
     line-height: 28px;
     height: auto;
   }
 
   .btnLocation {
-    width: 220px; /* Ajustar tamaño del botón */
+    width: 220px; 
     height: 60px;
-    font-size: 18px; /* Reducir tamaño de fuente */
-    top: 380px; /* Ajustar la posición */
+    font-size: 18px; 
+    top: 380px; 
     left: -30px;
   }
 }
 
 /* Móvil: Adaptación para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .container_fundo {
+  .containerAll {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size: cover; /* Asegura que la imagen cubra el contenedor */
-    //grid-template-columns: 100%; /* Una sola columna */
-    //grid-template-rows: 375px; /* Ajustar las filas según el contenido */
+    background-size: cover;
     width: 375px;
   }
 

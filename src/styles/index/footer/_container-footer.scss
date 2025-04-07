@@ -60,7 +60,7 @@ footer div {
   .container-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 689px;
     height: 104px;
   }
@@ -101,8 +101,8 @@ footer div {
   }
   
   .footer-index {
-    margin-top: 200px;
-    top: 0px;
+    position: relative;
+    top: 327px;
     width: 375px;
     height: 336px; 
     background-color: black;
@@ -110,10 +110,11 @@ footer div {
 
   .container-footer {
     flex-direction: column;
-    align-items: left;
+    justify-content: space-between;
     width: 311px;
     height: 240px;
-    padding: 20px;
+    padding: 0px;
+    
   }
 
   .footer-coluna1 img{
@@ -122,7 +123,8 @@ footer div {
   }
 
   .footer-coluna2 p {
-    font-size: 16px; 
+    font-size: 16px;
+    line-height: 26px;
     text-align: left;
   }
 
@@ -131,6 +133,7 @@ footer div {
     justify-content: space-between; 
     align-items: center; 
     width: 100px;
+    height: 20px;
     gap: 10px;
   }
 }

@@ -1,4 +1,4 @@
-.location-centro {
+.container-loc-centro {
   background-color: black;
   color: white;
   display: flex;
@@ -49,9 +49,9 @@
   line-height: 32px;
 }
 
-/* Tablets (largura de até 1024px) */
+
 @media (max-width: 1024px) {
-  .location-centro {
+  .container-loc-centro {
     height: 436px;
   }
 
@@ -87,5 +87,68 @@
     font-weight: 200;
     font-size: 18px;
     line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container-loc-centro {
+    display: block;
+    flex-direction: column;
+    height: 493px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .location-leftside {
+    width: 343px;
+    margin-left: 18px;
+  }
+
+  .location-rightside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 343px;
+    margin-left: 18px;
+    margin-top: 40px;
+  }
+
+  .location-rightside h3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .location-leftside h1 {
+    flex-direction: row;
+    gap: 10px;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .kingstreet {
+    font-size: 32px;
+    margin-top: 0px;
+  }
+
+  .address{
+    width: 100%;
+    height: 84px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .description {
+    width: 100%;
+    height: 140px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
   }
 }
